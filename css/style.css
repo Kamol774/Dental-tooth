@@ -120,6 +120,7 @@ table {
 
 .header-bottom{
   padding: 22px 0;
+  box-shadow: 1px 2px 2px -1px rgba(48, 44, 44, 0.18);
 }
 .header-bottom-row{
   display: flex;
@@ -127,7 +128,7 @@ table {
   justify-content: space-between;
 }
 .header-logo img{
-  min-width: 172px;
+  max-width: 172px;
 }
 .menu-nav ul{
   display: flex;
@@ -149,6 +150,7 @@ table {
   padding: 17px 28px;
   border-radius: 26px;
   font-style: 14px;
+  text-align:center;
   transition: 0.35s ease;
 }
 .header-bottom-btn:hover{
@@ -160,7 +162,7 @@ table {
   cursor: pointer;
 }
 .hamburger img{
-  width: 30px;
+  width: 22px;
 }
 .mobile-menu{
   background-color: #0E6EAA;
@@ -170,10 +172,11 @@ table {
   left: 0;
   width: 100%;
   padding: 20px;
-  display: none;
+  transition: 0.5s ease;
+  transform:translateX(100%);
 }
 .mobile-menu.is-active{
-  display: block;
+  transform: none;
 }
 .mobile-menu-header{
   display: flex;
@@ -245,6 +248,19 @@ table {
   .menu-nav {
     display: none;
   }
+}
+@media screen and (max-width:575px) {
+  .header-logo{
+    margin-right: 20px;
+  }
+  .header-logo img {
+    max-width: 140px;
+  }
+  .header-bottom-btn{
+    padding: 16px 20px;
+    font-size: 12px;
+  }
+  
 
 }
 

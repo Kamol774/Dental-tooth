@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  font-family: 'Source Sans 3';
+	line-height: 1;
+}
+a {
+  text-decoration:none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header START */
+.header-top {
+  background-color: #2378C9;
+  padding: 14px 0;
+}
+.header-top-row{
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-size: 14px;
+}
+.header-top-row a{
+  color:#FFF;
+}
+.header-top-location{
+  display: flex;
+  align-items:center;
+}
+.header-top-location img{
+  margin-right: 14px;
+}
+.header-top-right{
+  display: flex;
+  align-items:center;
+  margin-left: auto;
+}
+.header-top-phone{
+  margin-right: 40px;
+}
+.header-top-email{
+  margin-right: 55px;
+}
+.header-top-phone,
+.header-top-email{
+  display: flex;
+  align-items:center;
+}
+.header-top-phone img,
+.header-top-email img{
+  margin-right: 14px; 
+}
+.header-top-social{
+  display: flex;
+  align-items:center;
+}
+.header-top-social a:not(:last-child){
+  margin-right: 30px;
+}
+.header-top-social a img{
+  max-width: 22px;
+}
+.header-top-social a:hover{
+  transition: 0.35s ease;
+  transform: rotate(360deg);
+}
+
+
+.header-bottom{
+  padding: 22px 0;
+}
+.header-bottom-row{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.header-logo img{
+  min-width: 172px;
+}
+.menu-nav ul{
+  display: flex;
+}
+.menu-nav ul li a{
+  color:#302D2D;
+  font-size:18px;
+  transition: 0.35s ease;
+}
+.menu-nav ul li a:hover{
+  color:#2378C9;
+}
+.menu-nav ul li:not(:last-child){
+  margin-right:40px;
+}
+.header-bottom-btn{
+  background-color:#F86D6D;
+  color:#fff;
+  padding: 17px 28px;
+  border-radius: 26px;
+  font-style: 14px;
+  transition: 0.35s ease;
+}
+.header-bottom-btn:hover{
+  background-color:#DB5A5A;
+}
+
+.hamburger{
+  margin-left: auto;
+  cursor: pointer;
+}
+.hamburger img{
+  width: 30px;
+}
+.mobile-menu{
+  background-color: #0E6EAA;
+  box-shadow: (-2px 4px 4px 3px rgba(49, 46, 46, 0.09));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: none;
+}
+.mobile-menu.is-active{
+  display: block;
+}
+.mobile-menu-header{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  color:#FFF;
+  font-size: 22px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.mobile-menu-header::after{
+  content:'';
+  height: 1px;
+  width: calc(100% + 40px);
+  background-color: rgba(217, 214, 214, 0.56);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.mobile-menu-body{
+  text-align:center;
+}
+.mobile-menu-body a{
+  color:#FFF;
+}
+.mobile-menu-body .header-top-phone,
+.mobile-menu-body .header-top-email,
+.mobile-menu-body .header-top-social{
+  justify-content: center;
+  margin-right: 0;
+  margin-bottom: 30px;
+  font-style: 18px;
+}
+.mobile-menu-nav li{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Header END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive START */
+@media screen and (min-width:1008px) {
+  .hamburger{
+    display: none;
+  }
+}
+@media screen and (max-width:1200px) {
+  .menu-nav ul li:not(:last-child){
+    margin-right: 25px; 
+  }
+}
+@media screen and (max-width:1008px) {
+  .header-top-right,
+  .menu-nav {
+    display: none;
+  }
+
+}
+
+
+/* Responsive END */

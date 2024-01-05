@@ -36,6 +36,7 @@ body {
   font-family: 'Source Sans 3';
 	line-height: 1;
   overflow-x: hidden;
+  color: #302D2D;
 }
 a {
   text-decoration:none;
@@ -54,6 +55,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.def-title{
+  font-size: 52px;
+  line-height: 65px;
+  margin-bottom: 30px;
 }
 
 .container{
@@ -159,6 +166,7 @@ table {
 }
 
 .hamburger{
+  display: none;
   margin-left: auto;
   cursor: pointer;
 }
@@ -281,6 +289,7 @@ table {
   opacity: 0.07;
 }
 .banner-image{
+  margin-bottom: -3px;
   max-width: 483px;
   position: relative;
   z-index: 1;
@@ -303,6 +312,23 @@ table {
 
 
 
+/* About START */
+
+.s-about{
+  padding: 110px 0;
+}
+
+.about-row{
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.about-left img{
+  max-width: 488px; 
+}
+
+/* About END */
+
 
 
 
@@ -321,27 +347,33 @@ table {
 }
 @media screen and (max-width:1008px) {
   .hamburger{
-    display: none;
+    display:flex;
+  }
+  .mobile-menu{
+    z-index: 2;
   }
   .header-top-right,
   .menu-nav {
     display: none;
   }
   .banner-row{
+    position: relative;
     flex-direction: column;
   }
   .banner-left{
-    margin: 40px 25px;
+    margin: 40px 25px -20px 25px;
+  }
+  .banner-description{
+    margin-bottom: 0;
   }
   .banner-image{
     max-width: 292px;
+    margin-bottom: 100px;
+    transform: translateX(10%);
     z-index: 1;
-    transform: translateY(-100px);
   }
   .banner-btn{
-    transform: translateY(1200%);
-    /* transform: translateX(-); */
-    /* left: -1%; */
+    transform: translateY(800%);
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -350,6 +382,16 @@ table {
     justify-content: center;
     position: relative;
     z-index: 2;
+  }
+  .banner-circle{
+    display: flex;
+    left: 50%;
+    transform: translateY(-500%);
+    width: 150px;
+  }
+  .banner-logo{
+    width: 205px;
+    transform: translateY(-35%);
   }
 }
 @media screen and (max-width:575px) {
@@ -364,8 +406,14 @@ table {
     font-size: 12px;
   }
   
-
 }
-
+@media screen and (max-width:500px) {
+  .banner-title{
+    font-size: 45px;
+  }
+  .banner-description{
+    font-size: 15px;
+  }
+}
 
 /* Responsive END */

@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-family: 'Source Sans 3';
 	line-height: 1;
+  overflow-x: hidden;
 }
 a {
   text-decoration:none;
@@ -173,7 +174,7 @@ table {
   width: 100%;
   padding: 20px;
   transition: 0.5s ease;
-  transform:translateX(100%);
+  transform:translateX(110%);
 }
 .mobile-menu.is-active{
   transform: none;
@@ -216,9 +217,89 @@ table {
   margin-bottom: 30px;
   font-size: 18px;
 }
-
 /* Header END */
 
+
+/* Banner START */
+.s-banner{
+  background-color: #0E6EAA;
+}
+.banner-row{
+  display: flex;
+  align-items:center;
+}
+.banner-subtitle{
+  font-size: 14px;
+  font-weight: 400;
+  color:#C5C1FE;
+  position: relative;
+}
+.banner-subtitle::before{
+  content:'';
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #C5C1FE;
+  top: 50%;
+  left: calc(-100% - 16px);
+  transform: translateY(-50%);
+}
+.banner-title{
+  font-size: 62px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 105%;
+  margin:11px 0 20px 0;
+}
+.banner-description{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #FFF;
+  margin-bottom: 25px;
+}
+.banner-btn{
+  background-color:#5EB8F0;
+  padding: 18px 44px;
+  border-radius:50px;
+  display: inline-block;
+  font-size: 18px;
+  color: #FFF;
+}
+.banner-left{
+  min-width: 485px;
+}
+.banner-right{
+  position: relative;
+  margin-right: 100px;
+}
+.banner-logo{
+  position: absolute;
+  top: 177px;
+  right: -91px;
+  opacity: 0.07;
+}
+.banner-image{
+  max-width: 483px;
+  position: relative;
+  z-index: 1;
+}
+.banner-circle{
+  width: 218px;
+  height: 22px;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0px 4px 133px 239px rgba(255, 255, 255, 0.1);
+  border-radius:100%;
+  top: 330px;
+  left: 30%;
+  position: absolute;
+
+
+}
+
+/* Banner END */
 
 
 
@@ -233,20 +314,42 @@ table {
 
 
 /* Responsive START */
-@media screen and (min-width:1008px) {
-  .hamburger{
-    display: none;
-  }
-}
 @media screen and (max-width:1200px) {
   .menu-nav ul li:not(:last-child){
     margin-right: 25px; 
   }
 }
 @media screen and (max-width:1008px) {
+  .hamburger{
+    display: none;
+  }
   .header-top-right,
   .menu-nav {
     display: none;
+  }
+  .banner-row{
+    flex-direction: column;
+  }
+  .banner-left{
+    margin: 40px 25px;
+  }
+  .banner-image{
+    max-width: 292px;
+    z-index: 1;
+    transform: translateY(-100px);
+  }
+  .banner-btn{
+    transform: translateY(1200%);
+    /* transform: translateX(-); */
+    /* left: -1%; */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 280px;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
   }
 }
 @media screen and (max-width:575px) {

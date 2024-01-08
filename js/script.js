@@ -9,4 +9,19 @@ $(document).ready(function() {
 	});
 
 
+  // reviews SWIPER START
+
+  const reviewsSwiper = new Swiper('.reviews-swiper', {
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-swiper .swiper-button-next',
+      prevEl: '.reviews-swiper .swiper-button-prev',
+    },
+    speed:1000
+  
+  });
+
+  // Reviews SWIPER END
 });

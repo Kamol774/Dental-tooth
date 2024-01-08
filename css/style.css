@@ -465,12 +465,64 @@ table {
   margin-bottom: 7px;
 }
 
-
-
 /* Specialists END */
 
 
+/* Price START */
 
+  .s-price{
+    padding: 75px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: var(--gradient-1, linear-gradient(258deg, #DFEEFC 11.01%, rgba(167, 210, 251, 0.92) 92.77%));
+    position: relative;
+  }  
+
+  .s-price::after{
+    content:'';
+    background-image: url(/img/price-img.png);
+    background-size: 100% 100%;
+    width: 831px;
+    height: 831px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .s-price .def-title{
+    margin-bottom: 5px;
+  }
+
+  .price-wrap{
+    display: inline-block;
+    background-color: #5EB8F0;
+    border-radius:20px;
+    padding: 55px 60px;
+    color:#FFF;
+    position: relative;
+    z-index: 1;
+  }
+
+  .price-wrap .def-description{
+    color: #FFF;
+    margin-bottom: 70px;
+  }
+
+  .price-wrap ul li{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 15px;
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+
+  .price-wrap ul li span:last-child{
+    font-weight: 700;
+  }
+/* Price END */
 
 
 
@@ -625,6 +677,18 @@ table {
     }
     /* Specialists END */
 }
+
+
+@media screen and (max-width:800px) {
+    /* Price START */
+
+    .price-wrap{
+      width: 100%;
+    }
+  
+    /* Price END */
+}
+
 
 
 @media screen and (max-width:575px) {

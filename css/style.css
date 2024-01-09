@@ -732,11 +732,83 @@ strong{
   opacity: 1;
 }
 
-
 /* reviews END */
 
+/* form START */
 
+.s-form{
+  background: var(--gradient-1, linear-gradient(258deg, #DFEEFC 11.01%, rgba(167, 210, 251, 0.92) 92.77%));
+  position: relative;
+}  
 
+.s-form .container{
+  position: relative;
+}
+
+.form-row{
+  display: flex;
+  align-items:center;
+  padding: 125px 0;
+  position: relative;
+}
+
+.form-wrap{
+  background-color:#fff;
+  box-shadow: 0px 0px 8px 2px rgba(108, 108, 108, 0.25); 
+  border-radius: 20px;
+  padding: 58px 50px;
+  display: inline-block;
+  max-width: 425px;
+  z-index: 1;
+}
+
+.form-title{
+  font-size: 32px;
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.form-wrap input{
+  border: 1px solid #E4E4E4;
+  padding: 20px 25px;
+  border-radius:10px; 
+  font-size: 18px;
+  margin-bottom: 20px;
+  color:#B9B9B9;
+  width: 100%;
+}
+
+.form-wrap input[type="submit"]{
+  background: #5EB8F0;
+  border-radius:30px;
+  padding: 18px;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+  width: 100%;
+}
+
+.form-wrap input[type="submit"]:hover{
+  background-color:#51A8DE;
+}
+.form-agree{
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #747474;
+  max-width: 280px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.form-image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* form END */
 
 
 
@@ -920,6 +992,46 @@ strong{
     }
   
     /* Price END */
+
+    /* reviews START */
+
+    .s-reviews{
+      background-repeat: no-repeat;;
+      background-size:cover;
+    }
+
+    .reviews-wrap{
+      margin:0 15px;
+    }
+
+    .reviews-row{
+      flex-direction: column;
+      align-items:center;
+      padding: 0 40px;
+      margin: -20px;
+    }
+
+    .reviews-avatar{
+      margin-bottom: 23px;
+    }
+
+    /* reviews END */
+
+    /* form START */
+
+    .form-wrap{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-row{
+      padding: 60px 0;
+    }
+
+    .form-image{
+      display:none;
+    }
+    /* form END */
 }
 
 

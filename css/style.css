@@ -804,11 +804,111 @@ strong{
 
 .form-image{
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   right: 0;
 }
 
 /* form END */
+
+/* footer START */
+
+.site-footer{
+  background-color: #10406F;
+  color:#fff;
+}
+
+.site-footer a{
+  color: #fff;
+}
+
+.footer-row{
+  display: flex;
+}
+
+.footer-left{
+  padding: 65px 98px 65px 0;
+  margin-right: 98px;
+  border-right: 1px solid rgba(180, 180, 180, 0.35);
+
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 80px;
+}
+
+.footer-info{
+  margin-bottom: 90px;
+  max-width: 190px;
+}
+
+.footer-info-item{
+  display: flex;
+  align-items:center;
+}
+
+.footer-info-item:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.footer-info-icon{
+  margin-right: 20px;
+  text-align: center;
+}
+
+.footer-socials a:not(:last-child){
+  margin-right: 30px;
+}
+
+.footer-socials a{
+display: inline-block;
+}
+
+.footer-socials a:hover{
+  transition: 0.35s ease;
+  transform: rotate(360deg);
+}
+
+.footer-right{
+  display: flex;
+  padding: 65px 0;
+  column-gap:84px
+}
+
+.footer-title{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+
+.footer-menu ul li,
+.footer-menu a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #E0E0E0;
+  margin-bottom: 25px;
+  transition: color 0.35s ease;
+}
+
+.footer-menu a:hover{
+  color:#fff;
+}
+
+.footer-copyrights{
+  padding: 37px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #C3C3C3;
+  font-weight: 300;
+  border-top: 1px solid rgba(180, 180, 180, 0.35);
+
+}
+
+
+/* footer END */
+
+
+
 
 
 
@@ -849,6 +949,18 @@ strong{
 }
 
   /* news END */
+
+  /* footer START */
+
+  .footer-right{
+    column-gap: 40px;
+  }
+
+  .footer-left{
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+  /* footer END */
 
 }
 
@@ -1032,6 +1144,21 @@ strong{
       display:none;
     }
     /* form END */
+
+    /* footer START */
+
+    .footer-right{
+      display:inline-block;
+      text-align: center;
+      margin:0 auto;
+    }
+
+    .footer-menu{
+      margin-bottom: 61px;
+    }
+
+    /* footer END */
+
 }
 
 
@@ -1070,6 +1197,38 @@ strong{
   }
 
   /* Specialists END */    
+
+  /* footer START */
+
+  .footer-row{
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+
+  .footer-left{
+    border: 0;
+    margin: auto;
+    padding: 0;
+  }
+
+  .footer-right{
+    padding-bottom: 0;
+    margin-bottom: 21px;
+  }
+
+  .footer-logo{
+    margin-bottom: 51px;
+  }
+
+  .footer-info{
+    margin-bottom: 52px;
+  }
+
+  .footer-socials{
+    margin-bottom: 34px;
+  }
+  /* footer END */
 
 }
 
